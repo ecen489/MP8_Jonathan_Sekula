@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jonathan.mp8_jonathan_sekula.PullActivity">
+
+    <EditText
+        android:id="@+id/student_id"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Student ID"
+        android:layout_gravity="center"
+        android:paddingTop="20sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10sp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/query1"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:text="Query 1"
+            android:textSize="12sp"
+            android:onClick="Query1"/>
+
+        <Button
+            android:id="@+id/query2"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:text="Query 2"
+            android:textSize="12sp"
+            android:onClick="Query2"/>
+
+        <Button
+            android:id="@+id/push"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:text="Push"
+            android:textSize="12sp"
+            android:onClick="Push"/>
+
+        <Button
+            android:id="@+id/sign_out"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:textSize="12sp"
+            android:onClick="SignOut"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:paddingTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

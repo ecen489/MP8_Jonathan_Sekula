@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context="com.example.jonathan.mp8_jonathan_sekula.PushActivity">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="20sp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/bart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bart"
+            android:onClick="RadioClick"/>
+
+        <RadioButton
+            android:id="@+id/lisa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lisa"
+            android:onClick="RadioClick"/>
+
+        <RadioButton
+            android:id="@+id/milhouse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Milhouse"
+            android:onClick="RadioClick"/>
+
+        <RadioButton
+            android:id="@+id/ralph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ralph"
+            android:onClick="RadioClick"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/course_id"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:hint="Course ID"
+        android:paddingTop="40sp"/>
+
+    <EditText
+        android:id="@+id/course_name"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:hint="Course Name"/>
+
+    <EditText
+        android:id="@+id/grade"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:hint="Grade"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="40sp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Push"
+            android:onClick="PushData"/>
+
+    </LinearLayout>
+
+</LinearLayout>
